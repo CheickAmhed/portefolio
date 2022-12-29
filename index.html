@@ -1,0 +1,604 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portefeuille</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <script>
+        setTimeout(() => {
+            document.querySelector('.lc').style.display = "none"
+        }, 10000);
+        function formulaire()
+        {
+            var nom = document.querySelector('.nom').value;
+            if(nom.value==null)
+            {
+                alert("Votre nom doit comporter une valeur.");
+            }
+            var prenom = document.querySelector('.prenom').value;
+            if(prenom.value==null)
+            {
+                alert("Votre prénom doit comporter une valeur.");
+            }
+            var numero = document.querySelector('.phone').value;
+            if(numero.value==null)
+            {
+                alert("Votre numéro de téléphone doit comporter une valeur.");
+            }
+            var mail = document.querySelector('.mail').value;
+            if(mail.value==null)
+            {
+                alert("Votre adresse E-mail doit comporter une valeur.");
+            }
+            var message = document.querySelector('.txt').value;
+            if(message.value==null)
+            {
+                alert("Votre message doit comporter une valeur.");
+            }
+        }
+
+        var sombre= document.querySelector('.clr');
+        var body= document.getElementsByTagName('body')[0];
+        var darktheme= 'dark';
+        sombre.addEventListener('click',function()
+            {
+                if(body.classList.contains(darktheme)){
+                    body.classList.remove(darktheme);
+                }
+                else
+                {
+                    body.classList.add(darktheme);
+                }
+            }
+        );
+    </script>
+    <body>
+        <div class="lc">
+            <div class="l"></div>
+        </div>
+        
+        <header class="header">
+
+            <nav>
+                <div class="divimg">
+                    <img src="Images/keich_lab.png" class="logo">
+                </div>
+                <ul class="navlist">
+                    <li>
+                        <strong><a href="#">Accueil</a></strong>
+                    </li>
+                    <li>
+                        <strong><a href="#contact">Contact</a></strong>
+                    </li>
+                    <li>
+                        <strong><a href="#projet">Projets</a></strong>
+                    </li>
+                    <li>
+                        <strong><a href="#about">A propos</a></strong>
+                    </li>
+                    <li class="mouveright btn">
+                        <strong><a href="#sms">Message</a></strong>
+                    </li>
+                </ul>
+                <div class="menuhamber">
+                    <label for="" class="hamb" onclick="document.querySelector('.hamb').style.display= 'none';document.querySelector('.hmb').style.display= 'block';document.querySelector('.navlist').style.visibility= 'visible';">
+                        <span class="hambline"></span>
+                    </label>
+                    <label for="" class="hmb" onclick="document.querySelector('.hamb').style.display= 'block';document.querySelector('.hmb').style.display= 'none';document.querySelector('.navlist').style.visibility= 'hidden';">
+                        <span class="hmbln"></span>
+                    </label
+                </div>
+            </nav>
+            
+        </header>
+
+        <main class="main">
+            <div class="me">
+                <div class="meinfo">
+                    <div class="p1">
+                        <div class="nmpm">
+                            <h1 class="np"><strong>Cheick Amhed</strong></h1>
+                            <h1 class="np"><strong>OUEDRAOGO</strong></h1>
+                        </div>
+                       <div class="job">
+                        <div class="w">
+                            <img class="img" src="Images\devloppeur.png" alt="">
+                            <h3>DEVELOPPEUR</h3>
+                        </div>
+                        <div class="w">
+                            <img class="img" src="Images\designer.png" alt="">
+                            <h3>GRAPHISTE/INFOGRAPHE</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="p2">
+                            <div class="pres">
+                                <p class="p"><strong>2 ans</strong> d'experience</p>
+                                <p class="p"><strong>+30 projets</strong> terminés</p>
+                                <p class="p"><strong>23 clients</strong> satisfaitent</p>
+                            </div><br>
+                            <a download="" href="pdf/certificat_nationalite.pdf" class="cv">
+                                Télécharger le cv <div style="padding-left: 15px;"><img style="width: 25px;height: 25px;" src="Images\input.png"></div>
+                                <span class="overlay"></span>
+                            </a><br>
+                            <div class="trt" style="width: 100%;background-color: #009900;height: 2px;"></div>
+                    </div>
+                </div>
+                <div class="metof">
+                    <img class="pp" src="Images\keich1.png" alt="">
+                </div>
+                <div class="trait"></div>
+            </div>
+            <div class="prof">
+                <h1 class="gp" id="contact">CONTACT</h1><br><br>
+                <p class="msc">
+                    Salut! Bienvenu sur ma page. Je suis un developpeur full stack, un graphiste et aussi un infographe. Je suis disponible pour les projets suivants:
+                </p><br><br>
+                <div class="proj">
+                    <div class="projet">
+                        <h2>DEVELOPPEMENT</h2><br><br>
+                        <div style="column-count: 3;">
+                            <div class="pc">
+                                <img class="pim" src="Images\icons8_web_96px.png" alt="">
+                                <p>WEB</p>
+                            </div>
+                            <div class="pc">
+                                <img class="pim" src="Images\icons8_smartphone_tablet_104px.png" alt="">
+                                <p>MOBILE</p>
+                            </div>
+                            <div class="pc">
+                                <img class="pim" src="Images\icons8_computer_104px.png" alt="">
+                                <p>BUREAU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projet">
+                        <h2>GRAPHISME/INFOGRAPHIE</h2><br><br>
+                        <div style="column-count: 4;">
+                            <div class="pc">
+                                <img src="Images\icons8_billboard_96px.png" alt="" class="pim">
+                                <p>BASH</p>
+                            </div>
+                            <div class="pc">
+                                <img src="Images\icons8_sheet_of_paper_96px.png" alt="" class="pim">
+                                <p>AFFICHE</p>
+                            </div>
+                            <div class="pc">
+                                <img src="Images\icons8_magazine_104px_1.png" alt="" class="pim">
+                                <p>FLYER</p>
+                            </div>
+                            <div class="pc">
+                                <img src="Images\icons8_logo_96px.png" alt="" class="pim">
+                                <p>LOGO</p>
+                            </div>
+                            <div class="pc">
+                                <img src="Images\icons8_bank_cards_104px.png" alt="" class="pim">
+                                <p>CARTE</p>
+                            </div>
+                            <div class="pc">
+                                <img src="Images\icons8_data_grid_104px.png" alt="" class="pim">
+                                <p>MAQUETTE</p>
+                            </div>
+                            <div class="pc">
+                                <img src="Images\icons8_price_tag_104px.png" alt="" class="pim">
+                                <p>ETIQUETTE</p>
+                            </div>
+                            <div class="pc">
+                                <img src="Images\icons8_edit_image_104px.png" alt="" class="pim">
+                                <p>RETOUCHE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ctt">
+                    <h2>ME CONTACTER</h2>
+                    <div class="lien">
+                        <a class="des" href="#"><img class="im" src="Images\icons8_facebook_f_500px_1.png" alt=""></a>
+                        <a class="des" href="#"><img class="im" src="Images\icons8_linkedin_500px.png" alt=""></a>
+                        <a class="des" href="#"><img class="im" src="Images\icons8_twitter_500px_1.png" alt=""></a>
+                        <a class="des" href="https://api.whatsapp.com/send?phone=+22676483971&text=Hello, you are welcom!"><img class="im" src="Images\icons8_whatsapp_500px_1.png" alt=""></a>
+                        <a class="des" href="#"><img class="im" src="Images\icons8_telegram_app_500px_1.png" alt=""></a>
+                        <a class="des" href="#"><img class="im" src="Images\icons8_instagram_500px_1.png" alt=""></a>
+                        <a class="des" href="#"><img class="im" src="Images\icons8_github_500px_1.png" alt=""></a>
+                    </div>
+                    <h2 id="sms">M'ECRIRE UN MESSAGE</h2>
+                    <form class="mess">
+                        <input class="smsitm nom" type="text" name="" id="" placeholder="Nom">
+                        <input class="smsitm prenom" type="text" name="" id="" placeholder="Prenom">
+                        <input class="smsitm phone" type="text" name="" id="" placeholder="Téléphone">
+                        <input class="smsitm mail" type="mail" name="" id="" placeholder="Adresse E-mail">
+                        <textarea class="txt" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit" class="send" onclick="formulaire(this)">
+                            Envoyer  <div style="padding-left: 15px;"><img style="width: 25px;height: 25px;" src="Images\send.png"></div>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="trait"></div>
+            </div>
+            <div class="project">
+                <h1 class="gp" id="projet">PROJETS</h1>
+                <ul id="prtt">
+                    <button class="prtt" onclick="document.querySelector('.devel').style.display='block';document.querySelector('.grph').style.display='none';">
+                        <h2 class="h-21">DEVELOPPEMENT</h2>
+                    </button>
+                    <button class="prtt" onclick="document.querySelector('.grph').style.display='block';document.querySelector('.devel').style.display='none';">
+                        <h2 class="h-22">GRAPHISME/INFOGRAPHIE</h2>
+                    </button>
+                </ul>
+                <div class="pdg">
+                    <div class="devel">
+                        <div class="galeria">
+                           <div class="proyecto">
+                                <img class="gaim" src="Images/Affiche-Oce.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>TITRE DU PROJET</h3>
+                                    <p>Description</p>
+                                </div>
+                           </div>
+                           <div class="proyecto">
+                            <img class="gaim" src="Images/Affiche-Oce.jpg" alt="">
+                            <div class="overlai">
+                                <h3>TITRE DU PROJET</h3>
+                                <p>Description</p>
+                            </div>
+                            </div>
+                            <div class="proyecto">
+                                <img class="gaim" src="Images/Affiche-Oce.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>TITRE DU PROJET</h3>
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                            <div class="proyecto">
+                                <img class="gaim" src="Images/Affiche-Oce.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>TITRE DU PROJET</h3>
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                            <div class="proyecto">
+                                <img class="gaim" src="Images/Affiche-Oce.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>TITRE DU PROJET</h3>
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                            <div class="proyecto">
+                                <img class="gaim" src="Images/Affiche-Oce.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>TITRE DU PROJET</h3>
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grph">
+                        <div class="galeria">
+                            <div class="proyecto">
+                                <img class="gaim" src="Images/affiche2.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>AFFICHE</h3>
+                                    <p>Affiche publicitaire pour service traiteur</p>
+                                </div>
+                            </div>
+                            <div class="proyecto">
+                                <img class="gaim" src="Images/Afsa-3.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>ETIQUETTE</h3>
+                                    <p>Etiquette de savon de beauté</p>
+                                </div>
+                             </div>
+                             <div class="proyecto">
+                                <img class="gaim" src="Images/carte1.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>CARTE</h3>
+                                    <p>Carte de visite personnelle</p>
+                                </div>
+                             </div>
+                             <div class="proyecto">
+                                <img class="gaim" src="Images/logo-ipsrf.png" alt="">
+                                <div class="overlai">
+                                    <h3>LOGO</h3>
+                                    <p>Logo d'une institut privée</p>
+                                </div>
+                            </div>
+                            <div class="proyecto">
+                                <img class="gaim" src="Images/carte-kouraogo1-Récupéré1.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>CARTE</h3>
+                                    <p>Carte de visite publicitaire</p>
+                                </div>
+                            </div>
+                            <div class="proyecto">
+                                <img class="gaim" src="Images/jvlil-2.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>LOGO</h3>
+                                    <p>Logo personnel</p>
+                                </div>
+                            </div>
+                            <div class="proyecto">
+                                <img class="gaim" src="Images/Me.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>RETOUCHE</h3>
+                                    <p>Retouche professinnelle d'une photo</p>
+                                </div>
+                            </div>
+                            <div class="proyecto">
+                                <img class="gaim" src="Images/maquette.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>MAQUETTE</h3>
+                                    <p>Maquette de portfolio personnel</p>
+                                </div>
+                            </div>
+                            <div class="proyecto">
+                                <img class="gaim" src="Images/Affiche-Oce.jpg" alt="">
+                                <div class="overlai">
+                                    <h3>AFFICHE</h3>
+                                    <p>Affiche pour annoncer un évènement</p>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="trait"></div>
+            </div>
+            <div class="about">
+                <h1 class="gp" id="about">A PROPOS</h1><br><br>
+                <div class="perso">
+                    <div class="pr prr">
+                        <h2>DONNEES PERSONNELLES</h2><br>
+                        <p class="dp"><strong>Naissance:</strong> 23/12/2000</p>
+                        <p class="dp"><strong>Nationnalité:</strong> Burkinabé</p>
+                        <p class="dp"><strong>Téléphone:</strong> +226 76 48 39 71</p>
+                        <p class="dp"><strong>Adresse Email:</strong> pakodeamhed@gmail.com</p>
+                        <p class="dp"><strong>Adresse:</strong> Secteur 39/Ouagadougou/Burkina Faso</p>
+                    </div>
+                    <div class="pr">
+                        <h2>INTERETS PERSONNELS</h2><br><br>
+                        <div style="column-count: 4;">
+                            <div class="pc">
+                                <img class="pim" src="Images\icons8_game_controller_104px.png" alt="">
+                                <p>JEUX</p>
+                            </div>
+                            <div class="pc">
+                                <img class="pim" src="Images\icons8_headphones_96px.png" alt="">
+                                <p>MUSIQUE</p>
+                            </div>
+                            <div class="pc">
+                                <img class="pim" src="Images\icons8_soccer_ball_104px.png" alt="">
+                                <p>FOOTBALL</p>
+                            </div>
+                            <div class="pc">
+                                <img class="pim" src="Images\icons8_book_104px.png" alt="">
+                                <p>LECTURE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br><br><br>
+                <div class="skills">
+                    <h2>COMPETENCES</h2><br><br>
+                    <div class="fila">
+                        <div class="col">
+                            <h3>TECHNIQUES</h3><br><br>
+                            <div class="skill">
+                                <span>HTML & CSS</span>
+                                <div class="barraskill">
+                                    <div class="progreso hc">
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>JAVASCRIPT</span>
+                                <div class="barraskill">
+                                    <div class="progreso js">
+                                        <span>45%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>JAVA</span>
+                                <div class="barraskill">
+                                    <div class="progreso j">
+                                        <span>45%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>PYTHON</span>
+                                <div class="barraskill">
+                                    <div class="progreso py">
+                                        <span>45%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>C</span>
+                                <div class="barraskill">
+                                    <div class="progreso c">
+                                        <span>45%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>PHOTOSHOP</span>
+                                <div class="barraskill">
+                                    <div class="progreso pshp">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>XD</span>
+                                <div class="barraskill">
+                                    <div class="progreso xd">
+                                        <span>95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>OFFICE</span>
+                                <div class="barraskill">
+                                    <div class="progreso office">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>MAINTENANCE & REPARATION DE PC</span>
+                                <div class="barraskill">
+                                    <div class="progreso mrpc">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3>PROFESSIONNELES</h3><br><br>
+                            <div class="skill">
+                                <span>COMMUNICATION</span>
+                                <div class="barraskill">
+                                    <div class="progreso comm">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>TRAVAIL EN EQUIPE</span>
+                                <div class="barraskill">
+                                    <div class="progreso tree">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>CREATIVITE</span>
+                                <div class="barraskill">
+                                    <div class="progreso creat">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>GESTION DE PROJET</span>
+                                <div class="barraskill">
+                                    <div class="progreso gspr">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3>LANGUES</h3><br><br>
+                            <div class="skill">
+                                <span>ANGLAIS</span>
+                                <div class="barraskill">
+                                    <div class="progreso eng">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>FRANCAIS</span>
+                                <div class="barraskill">
+                                    <div class="progreso fr">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>MOORE</span>
+                                <div class="barraskill">
+                                    <div class="progreso mr">
+                                        <span>98%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cursus">
+                    <h2>CURSUS</h2><br><br>
+                    <div class="fila">
+                        <div class="col izquierda">
+                            <h3>EDUCATION</h3><br><br>
+                            <div class="item izq">
+                                <h4>PROGRAMMATION INFORMATIQUE</h4>
+                                <span class="casa">Burkina Institute of Technology</span>
+                                <span class="fecha">2021-MAINTENANT</span>
+                                <P>Je suis en Licence 2.</P>
+                                <div class="connectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                            <div class="item izq">
+                                <h4>MATHEMATIQUES ET SCIENCES NATURELLES</h4>
+                                <span class="casa">Lycée Privé Lamartine</span>
+                                <span class="fecha">2019-2021</span>
+                                <P>J'ai effectué mon parcours scolaire au Lycée Privé Lamartine de la Premiere à la Terminale et j'ai obtenu le BAC.</P>
+                                <div class="connectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                            <div class="item izq">
+                                <h4>ENSEIGNEMENT GENERAL</h4>
+                                <span class="casa">Lycée Municipal Toussaint Louverturte</span>
+                                <span class="fecha">2012-2019</span>
+                                <P>J'ai effectué mon parcours scolaire au Lycée Municipal Toussaint Louverturte de la Sixième à la Seconde et j'ai obtenu le BEPC.</P>
+                                <div class="connectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col derecha">
+                            <h3>EXPERIENCE</h3><br><br>
+                            <div class="item der">
+                                <h4>DEVELOPPEUR FRONT-END</h4>
+                                <span class="casa">Rigo Faso</span>
+                                <span class="fecha">10/2022-11/2022</span>
+                                <P>J'ai effectué un stage à Rigo Faso et j'ai eu les competences d'un développeur front-end.</P>
+                                <div class="connectord">
+                                    <div class="circulod"></div>
+                                </div>
+                            </div>
+                            <div class="item der">
+                                <h4>MAINTENANCIER INFORMATIQUE</h4>
+                                <span class="casa">Racine Technologie</span>
+                                <span class="fecha">09/2022-10/2022</span>
+                                <P>J'ai effectué un stage à Racine Technologie et j'ai eu les competences d'un maintenancier informatique.</P>
+                                <div class="connectord">
+                                    <div class="circulod"></div>
+                                </div>
+                            </div>
+                            <div class="item der">
+                                <h4>GRAPHISTE ET INFOGRAPHE</h4>
+                                <span class="casa">Racine Technologie</span>
+                                <span class="fecha">09/2022-10/2022</span>
+                                <P>J'ai effectué une formation en graphisme à Racine Technologie et j'ai eu les competences d'un graphiste/infographe.</P>
+                                <div class="connectord">
+                                    <div class="circulod"></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <span class="ftcp">
+                &#169;Cheick Amhed|Tous droits sont reservés
+            </span>
+            <div class="coim">
+                <img class="fimg smb" src="Images/sombre.png" alt="" onclick="document.querySelector('.smb').style.display='none';document.querySelector('.clr').style.display='block'">
+                <img class="fimg clr" src="Images/claire.png" alt="" onclick="document.querySelector('.smb').style.display='block';document.querySelector('.clr').style.display='none'">
+                <a href="#"><img class="rimg" src="Images/remont.png" alt=""></a>
+            </div>
+        </footer>
+    </body>
+    </html>
